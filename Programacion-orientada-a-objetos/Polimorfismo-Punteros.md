@@ -7,6 +7,7 @@
 
 * Cuando una clase hija sobrecarga(override)un metodo public/protected der la clase padre.Cuando el codigo cliente llama el metodo en la clase hija, elmetodo  se "resuelve" en ese mmomento invocando el metodo sobre cargo.
 
+``` java
 class Padre {
     public voidd foo(){
         sys.out("Algo");
@@ -20,20 +21,31 @@ class Hija{
     }
 }
 
+```
 * Polimorfismo permite tratar la clase hija como si fuera la padre.
+
+```java
 
 Padre p = new Hija();
 p.foo() -> se resuelve en un run-time e invoca Hija.foo
 
+```
+
 * Cualquier metodo visible de la clase Padre se puede acceder a traves de la Hija.
 
+``` java
 Hija h= new Hija;
    _____ 
 h.|     | -> Aparece todo lo visible del Padre
   |     |
   |_____|
 
+```
+
 * Al reves no. A traves de la Padre, solo lo que es visible de la hija que es comun con la del Padre se puede acceder.
+
+
+``` java
 
 Padre p = new Hija;
    _____ 
@@ -41,8 +53,11 @@ p.|     | -> Aparece solo lo ccmun delPpadre e Hija
   |     |
   |_____|
 
+```
+
 * Algunos Lenguajes permiten crear claes abstractas que son utles para polimorfismos
 
+``` java
 //no se puede instanciar
 
 abstract class Animal{ 
@@ -59,8 +74,11 @@ class Perro{
     }
 }
 
+```
+
 * Las clases tambien permiten crear interfases. Las interfases proveen polimorfismos sin formar parte de una jerarquia.
 
+``` java
 interface Alimentable{
     void alimentar();
 }
@@ -69,10 +87,13 @@ class Persona implements Alimentable{
     void alimentar();
 }
 
+```
+
 ## Compile-time
 
 * La habilidad para sobre cargar(ovrerride) metodos, esdecir crear varios metodos con el mimismo nombre pero diferentes parametros.
  
+ ``` java
  class test{
     void foo(){
     }
@@ -82,6 +103,7 @@ class Persona implements Alimentable{
     }
  }
 
+```
  # Abstraccion
 
  * Algo propio de POO>
@@ -102,6 +124,8 @@ class Persona implements Alimentable{
 ![Definicion de un puntero con una imagen de  referencia haciendo ilusion a la memoria](https://image.slidesharecdn.com/punteros-120105064722-phpapp01/95/punteros-2-1024.jpg?cb=1325746331)
 
 * Ejemplo de puntero en Java
+
+``` java
 
 public class Persona {
     private String nombre;
@@ -126,6 +150,8 @@ public class Persona {
         System.out.println("Nombre de persona2: " + persona2.getNombre());
     }
 }
+
+```
 
 * En este ejemplo:
 
