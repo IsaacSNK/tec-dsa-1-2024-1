@@ -1,4 +1,5 @@
 # Introducción a los grafos
+
 Los grafos son estructuras de datos generales que tienen un gran rango de aplicaciones. 
 
 - Sociología
@@ -46,6 +47,7 @@ Un grafo es conexo si existe un camino entre cualquier par de nodos que lo compo
 Un grafo es fuertemente conexo si el grafo es conexo y es un dígrafo.
 
 # Representación 
+
 Los grafos se pueden representar utilizando dos enfoques diferentes:
 - Usando una matriz bidimensional conocida como matriz de adyacencia
 - Usando una representación dinámica conocida como lista de adyacencia
@@ -55,6 +57,7 @@ Elegir entre una representación u otra depende del tipo de array y de las opera
 - Si el grafo es disperso, lo mejor es escoger la lista enlazada.
 
 ## Matriz de adyacencia
+
 Sea G = {V, A} donde V = {v~0~, v~1~, v~2~,…, v~n-1~} y A = {(vi, vj)}. Los nodos se pueden representar mediante la matriz A de nxn conocida como matriz de adyacencia. Cada elemento de aij puede tomar uno de los siguientes valores:
 ![Matriz de adyacencia](image-4.png)
 
@@ -72,10 +75,12 @@ A = |0  0  0  0  0 |
 ![matriz grafo ponderado](image-6.png)
 
 ## Lista de adyacencia
+
 Una lista de adyacencia es una lista vinculada donde cada elemento representa un nodo del grafo. Cada elemento contiene una lista de relaciones con otros nodos, siendo el nodo del elemento, el origen.
 ![Lista de adyacencia](image-7.png)
 
 # Transversales de un grafo
+
 Atravesar un grafo implica visitar todos los nodos accesibles comenzando desde un nodo específico
 Algoritmo de recorrido básico:
 - Sea V el conjunto de vértices del gráfico.
@@ -85,6 +90,7 @@ Algoritmo de recorrido básico:
 - El algoritmo termina cuando W está vacío
 
 ## Breadth-First 
+
 Utiliza una cola que mantiene los vértices marcados.
 
 FIFO logra que a partir de v, primero se procesen todos los vértices adyacentes, luego todos los adyacentes de los adyacentes de v...y así sucesivamente
@@ -100,6 +106,7 @@ Algoritmo:
 ![breadth first alg](image-8.png)
 
 ## Depth-First
+
 En Depth-First, el orden de procesamiento viene dado por un enfoque LIFO
 Atravesar el grafo con un nodo v. v se marca como visitado y se empuja a la pila. La parte superior de la pila está reventada. Cada nodo adyacente de v no visitado se empuja a la pila.
 
