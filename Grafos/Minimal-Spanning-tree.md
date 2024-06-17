@@ -15,7 +15,9 @@ Un **árbol** es un subconjunto del grafo que está conexo y no tiene ciclos.
 Si todos los vértices están en el árbol, entonces es un grafo conexo.
 
 Dado un grafo no dirigido, encuentre el árbol de expansión mínimo
+
 ![minimal spanning tree](image-16.png)
+
 - El mismo grafo puede tener varios arboles de expansión, pero no tofos son el mínimo.
 
 ### ¿Como conseguirlo?

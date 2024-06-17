@@ -9,9 +9,11 @@ El algoritmo encuentra un nuevo vértice para agregar al árbol eligiendo el bor
 ![prim 1](image-17.png)
 
 ![prim table](image-18.png)
+
 *Peso mínimo conectado a un nodo conocido*
 
 Al realizar todo el algoritmo el resultado se vería así:
+
 ![prim result](image-19.png)
 
 ![prim table result](image-20.png)

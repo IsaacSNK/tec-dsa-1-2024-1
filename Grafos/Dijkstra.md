@@ -8,21 +8,27 @@ El algoritmo de Dijkstra encuentra el camino más corto desde un nodo de origen 
 
 Edsger Dijkstra (1930 - 2002) fue un informático holandés que dio forma a la programación informática como una ciencia reconocida.
 ¿Cómo funciona?
+
 ![Dijkstra technique](image-10.png)
+
 1. Se utilizará una tabla donde la primera columna es el vertice, la segunda es el peso temporal que se le dará a un camino y en la tercera columna el peso final. 
 
+
 | Vertice | Temporal | Final |
-|----------------------------|
-|   A     |     0    |   0   |
-|   B     |          |       |
-|   C     |          |       |
-|   D     |          |       |
-|   E     |          |       |
+|---------|----------|-------|
+|   A     |    0     |   0   |
+|   B     |   50     |  50   |
+|   C     |  110     | 110   |
+|   D     |   80     |  80   |
+|   E     |  150     | 150   |
+
+
 
 2. Escoger un punto de salida y otro de entrada. A -> E.
 3. Empezar por los nodos adyacentes al de salida y analizando su peso, este se coloca en la columna temporal.
 4. Se debe escoger el de magnitud más corta y se coloca este número en peso final. A partir de este nodo se le analizan sus adyacentes pero la magnitud es la suma del peso final + el peso que exista en las aristas.
 5. Se analiza cual es el menor y a partir de ahí se sigue analizando.
+*En este caso la distancia mas corta es A -> D -> E*
 
 ### Estructura general 
 

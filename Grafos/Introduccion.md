@@ -59,6 +59,7 @@ Elegir entre una representación u otra depende del tipo de array y de las opera
 ## Matriz de adyacencia
 
 Sea G = {V, A} donde V = {v~0~, v~1~, v~2~,…, v~n-1~} y A = {(vi, vj)}. Los nodos se pueden representar mediante la matriz A de nxn conocida como matriz de adyacencia. Cada elemento de aij puede tomar uno de los siguientes valores:
+
 ![Matriz de adyacencia](image-4.png)
 
 - Por ejemplo, digamos que los nodos son {D, F, K, L , R} la matriz sería
@@ -69,14 +70,17 @@ A = |0  0  0  0  0 |
     |0  1  1  0  0 |
     |1  0  0  0  0 |
 ```
+
 ![alt text](image-5.png)
 
 - Si el grafo es ponderado
+
 ![matriz grafo ponderado](image-6.png)
 
 ## Lista de adyacencia
 
 Una lista de adyacencia es una lista vinculada donde cada elemento representa un nodo del grafo. Cada elemento contiene una lista de relaciones con otros nodos, siendo el nodo del elemento, el origen.
+
 ![Lista de adyacencia](image-7.png)
 
 # Transversales de un grafo
@@ -111,4 +115,5 @@ En Depth-First, el orden de procesamiento viene dado por un enfoque LIFO
 Atravesar el grafo con un nodo v. v se marca como visitado y se empuja a la pila. La parte superior de la pila está reventada. Cada nodo adyacente de v no visitado se empuja a la pila.
 
 Esto continua hasta que no haya más elementos en la pila.
+
 ![depth first](image-9.png)

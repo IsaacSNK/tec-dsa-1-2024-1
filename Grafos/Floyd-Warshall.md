@@ -15,8 +15,11 @@ El algoritmo de Floyd determina una nueva matriz D de nxn elementos, donde cada 
 ![D matrix](image-11.png)
 
 - Otra matriz Q~1~, Q~2~,..., Q~k~, Qn se genera en cada paso desde Q~0~. Q es la matriz predecesora.
+
 ![Q matrix](image-12.png)
+
 ----------------------------
+
 ![Floyd alg](image-13.png)
 
 
